@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học về JS</title>
+</head>
+<body>
+    <button onclick="alert('Nguyen Manh Phuoc')">Hello</button>
+    <button onclick="add(5,10)">Add</button>
+    <button onclick="getArea(10)">Area of Circle</button>
+    <button onclick="get(5)">Chu vi hinh tron</button>
+    <p id="ketqua"></p>
+    <p id="result"></p>
+
+    <script>
+        function add(a,b){
+            let total = a + b;
+            let pElement = document.getElementById('result');
+            pElement.innerHTML = "Tổng là : <b>" + total + "</b>";
+        }
+    </script>
+  ` <form> 
+        <label for="num1">Number 1:</label> 
+        <input type="number" id="num1" name="num1"><br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" name="num2"><br>
+        <input type="button" value="Add" onclick="addNumbers()">
+        <input type="button" value="subtract" onclick=" subtractNumbers()">
+        <input type="button" value="multiply" onclick=" multiplyNumbers()">
+        <input type="button" value="divide" onclick=" divideNumbers()"><br>
+
+
+        <label for="p">Nhap R</label>
+        <input type="ph" id="p" name="p"><br>
+        <input type="button" value="chuvi" onclick="chuvihinhtron()">
+        
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
